@@ -1,0 +1,33 @@
+{
+  "name": "christian-haney.com",
+  "version": "1.0.0",
+  "description": "The personal website for Christian Haney",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Coding-Christian/christian-haney.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Coding-Christian/christian-haney.com/issues"
+  },
+  "homepage": "https://github.com/Coding-Christian/christian-haney.com#readme",
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/plugin-transform-react-jsx": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-transition-group": "^4.3.0"
+  }
+}
