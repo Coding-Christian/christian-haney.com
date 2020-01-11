@@ -1,0 +1,21 @@
+---------------------
+ CREDITS
+---------------------
+
+- Bootstrap 4.3.1  -  https://getbootstrap.com/
+
+- Font Awesome  -  https://fontawesome.com/
+
+- Lightbox2  -  https://lokeshdhakar.com/projects/lightbox2/
+
+- Heisengberg Media - intro photo
+
+
+
+---------------------
+ FONTS
+---------------------
+
+- Roboto Condensed  -  https://fonts.google.com/specimen/Roboto+Condensed
+
+- Open Sans  -  https://fonts.google.com/specimen/Open+Sans
