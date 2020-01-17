@@ -61,33 +61,21 @@ function map() {
             tooltipAnchor: [0, 19]
         });
 
-        var dragging = false,
-            tap = false;
-
-        if ($(window).width() > 700) {
-            dragging = true;
-            tap = true;
-        }
-
         var map = L.map(mapId, {
             center: mapCenter,
             zoom: 13,
-            dragging: dragging,
-            tap: tap,
+            zoomControl: false,
+            doubleClickZoom: false,
+            dragging: false,
+            tap: false,
             scrollWheelZoom: false
         });
 
         var Wikimedia = L.tileLayer('https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}{r}.png', {
-            attribution: '<a href="https://wikimediafoundation.org/wiki/Maps_Terms_of_Use">Wikimedia</a>',
-            minZoom: 1,
-            maxZoom: 19
+            attribution: '<a href="https://wikimediafoundation.org/wiki/Maps_Terms_of_Use">Wikimedia</a>'
         });
 
         Wikimedia.addTo(map);
-
-        map.once('focus', function () {
-            map.scrollWheelZoom.enable();
-        });
 
         if (mapMarker) {
             var marker = L.marker(mapCenter, {
