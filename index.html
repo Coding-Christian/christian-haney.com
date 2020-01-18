@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
+    <meta name="description" content="Author: Christian Haney, Profession: full-stack web developer, Languages/Libraries: JavaScript, React, Node, PHP, SQL, jQuery, Bootstrap, HTML, CSS, Python">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -12,15 +12,10 @@
     <link rel="stylesheet" href="vendor/lightbox2/css/lightbox.min.css">
     <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
     <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css">
     <link rel="shortcut icon" href="favicon.png">
     <title>Christian Haney</title>
-    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
   </head>
   <body>
-    <!-- Hero Section-->
     <section id="intro" style="background: url(img/startup-room.jpg)" class="hero bg-cover">
       <div class="overlay"></div>
       <div class="content h-100 d-flex align-items-center">
@@ -29,12 +24,15 @@
           <h1 class="text-uppercase hero-text text-white"><span class="font-weight-bold d-block"></span>Christian Haney</h1>
           <p class="headings-font-family text-uppercase lead">Full Stack - React | JavaScript | Node | PHP | SQL | HTML | CSS</p>
         </div>
-      </div><a href="#about" class="scroll-btn link-scroll"><i class="fas fa-angle-double-down"></i></a>
+      </div>
+      <a href="#about" class="scroll-btn link-scroll">
+        <i class="fas fa-angle-double-down"></i>
+        <span class="sr-only">Scroll to next section</span>
+      </a>
     </section>
-    <!-- Navbar-->
     <header class="header sticky-top">
       <nav class="navbar navbar-expand-lg bg-white border-bottom py-0">
-        <div class="container"><a href="#" class="navbar-brand py-1"><img src="img/logo.png" alt="" class="img-fluid"></a>
+        <div class="container"><a href="#" class="navbar-brand py-1"><img src="img/logo.png" alt="Home" class="img-fluid"></a>
           <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><span class="fas fa-bars"></span></button>
           <div id="navbarSupportedContent" class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto px-3">
@@ -48,7 +46,6 @@
         </div>
       </nav>
     </header>
-    <!-- About Section-->
     <section id="about" class="about">
       <div class="container">
         <header class="text-center mb-5">
@@ -69,7 +66,7 @@
           <figure class="col-lg-6 d-flex flex-column">
             <img src="img/learningfuze.jpg" alt="Christian Haney and the Fresh! Cooking Assistant team" class="img-fluid">
             <figcaption class="small text-gray">
-              The <a href="https://fresh.vg">Fresh!</a> Team. From left to right: Scott Bowler, Project Manager; Christian Parizeau, Front-end Engineer; Samantha Nagle, Team Lead; Me, Back-end Engineer
+              The <a rel="noopener" href="https://fresh.vg" class="hyperlink">Fresh!</a> Team. From left to right: Scott Bowler, Project Manager; Christian Parizeau, Front-end Engineer; Samantha Nagle, Team Lead; Me, Back-end Engineer
           </figcaption>
           </figure>
         </div>
@@ -98,7 +95,6 @@
         </div>
       </div>
     </section>
-    <!-- Skills Section-->
     <section id="skills" class="bg-gray">
       <div class="container">
         <header class="text-center mb-5">
@@ -162,7 +158,6 @@
         </div>
       </div>
     </section>
-    <!-- Projects Section-->
     <section id="projects">
       <div class="container">
         <header class="text-center mb-5">
@@ -170,76 +165,66 @@
         </header>
         <div class="row text-center">
           <div class="col-lg-4 col-md-6 mb-4">
-            <a href="https://fresh.vg" target="_blank"><img src="img/fresh-thumbnail.png" alt="Fresh! Cooking Assistant" class="img-fluid mb-4 border"></a>
+            <a rel="noopener" href="https://fresh.vg" target="_blank" class="hyperlink"><img src="img/fresh-thumbnail.png" alt="Fresh! Cooking Assistant" class="img-fluid mb-4 border"></a>
             <h4 class="font-weight-bold text-uppercase">Fresh! Cooking Assistant</h4>
             <p class="small text-gray text-uppercase">
-              <a href="https://github.com/kittenbites/fresh-cooking-assistant" target="_blank">GitHub</a> | <a href="https://fresh.vg" target="_blank">Live Site</a>
+              <a rel="noopener" href="https://github.com/kittenbites/fresh-cooking-assistant" target="_blank" class="hyperlink">GitHub</a> | <a rel="noopener" href="https://fresh.vg" target="_blank" class="hyperlink">Live Site</a>
             </p>
             <p class="small text-gray">A React/PHP based web application for cooks who want to elevate their cooking with fresh, seasonal ingredients.</p>
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
-            <a href="https://sgt.christian-haney.com" target="_blank"><img src="img/sgt-thumbnail.png" alt="Student Grade Table" class="img-fluid mb-4 border"></a>
+            <a rel="noopener" href="https://sgt.christian-haney.com" target="_blank" class="hyperlink"><img src="img/sgt-thumbnail.png" alt="Student Grade Table" class="img-fluid mb-4 border"></a>
             <h4 class="font-weight-bold text-uppercase">Student Grade Table</h4>
             <p class="small text-gray text-uppercase">
-              <a href="https://github.com/Coding-Christian/student-grade-table" target="_blank">GitHub</a> | <a href="https://sgt.christian-haney.com" target="_blank">Live Site</a>
+              <a rel="noopener" href="https://github.com/Coding-Christian/student-grade-table" target="_blank" class="hyperlink">GitHub</a> | <a rel="noopener" href="https://sgt.christian-haney.com" target="_blank" class="hyperlink">Live Site</a>
             </p>
             <p class="small text-gray">A fullstack, React/Node based web application for teachers who want to manage student grade data</p>
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
-            <a href="https://memory.christian-haney.com" target="_blank"><img src="img/memory-thumbnail.png" alt="Memory Matching Game" class="img-fluid mb-4 border"></a>
+            <a rel="noopener" href="https://memory.christian-haney.com" target="_blank" class="hyperlink"><img src="img/memory-thumbnail.png" alt="Memory Matching Game" class="img-fluid mb-4 border"></a>
             <h4 class="font-weight-bold text-uppercase">Memory Matching Game</h4>
             <p class="small text-gray text-uppercase">
-              <a href="https://github.com/Coding-Christian/memory-match-game" target="_blank">GitHub</a> | <a href="https://memory.christian-haney.com" target="_blank">Live Site</a>
+              <a rel="noopener" href="https://github.com/Coding-Christian/memory-match-game" target="_blank" class="hyperlink">GitHub</a> | <a rel="noopener" href="https://memory.christian-haney.com" target="_blank" class="hyperlink">Live Site</a>
             </p>
             <p class="small text-gray">A JavaScript/jQuery based card matching game themed after the anime series, "JoJo's Bizarre Adventure".</p>
           </div>
         </div>
       </div>
     </section>
-    <!-- Map-->
     <section id="map" class="border-bottom border-top"></section>
-    <!-- Contact Section-->
     <section id="contact">
       <div class="container">
         <header class="text-center mb-5">
           <h2 class="text-uppercase lined">Contact</h2>
         </header>
         <div class="row">
-          <div class="col-lg-6 offset-lg-3 mb-4">
+          <div class="col-lg-6 offset-lg-3 mb-4 d-flex flex-column">
             <p class="text-justify">
               Please feel free to contact me with any questions or opportunities you may have regarding me or my work.
               I will attempt to respond to all emails as quickly as possible, and I thank you for taking time to reach out to me.
             </p>
+            <p class="align-self-center">Phone: <a href="tel:18584723846" class="hyperlink">+1 (858) 472-3846</a></p>
+            <p class="align-self-center">Email: <a href="mailto:mail@christian-haney.com" class="hyperlink">mail@christian-haney.com</a></p>
             <ul class="mb-0 list-inline text-center">
-              <li class="list-inline-item"><a href="https://www.linkedin.com/in/christian-haney/" target="_blank" class="social-link social-link-linkedin"><i class="fab fa-linkedin"></i></a></li>
-              <li class="list-inline-item"><a href="https://github.com/Coding-Christian" target="_blank" class="social-link social-link-github"><i class="fab fa-github"></i></a></li>
-              <li class="list-inline-item"><a href="mailto:mail@christian-haney.com" class="social-link social-link-email"><i class="fas fa-envelope"></i></a></li>
+              <li class="list-inline-item">
+                <a rel="noopener" href="https://www.linkedin.com/in/christian-haney/" target="_blank" title="LinkedIn" class="social-link social-link-linkedin">
+                  <i class="fab fa-linkedin" aria-hidden="true"></i>
+                  <span class="sr-only">LinkedIn profile link</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a rel="noopener" href="https://github.com/Coding-Christian" target="_blank" title="GitHub" class="social-link social-link-github">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <span class="sr-only">GitHub profile link</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a rel="noopener" href="mailto:mail@christian-haney.com" title="Email" class="social-link social-link-email">
+                  <i class="fas fa-envelope" aria-hidden="true"></i>
+                  <span class="sr-only">Email contact link</span>
+                </a>
+              </li>
             </ul>
-          </div>
-          <div class="col-lg-6 offset-lg-3">
-            <!-- <form action="" class="contact-form">
-              <div class="row">
-                <div class="form-group col-lg-6">
-                  <label for="firstName">Your firstname *</label>
-                  <input id="firstName" type="text" name="firstname" placeholder="Enter your firstname" class="form-control">
-                </div>
-                <div class="form-group col-lg-6">
-                  <label for="lastName">Your lastname *</label>
-                  <input id="lastName" type="text" name="lastname" placeholder="Enter your lastname" class="form-control">
-                </div>
-                <div class="form-group col-lg-12">
-                  <label for="email">Your email *</label>
-                  <input id="email" type="email" name="email" placeholder="Enter your email" class="form-control">
-                </div>
-                <div class="form-group col-lg-12">
-                  <label for="message">Your message for us *</label>
-                  <textarea id="message" name="message" placeholder="Enter your message" rows="4" class="form-control"></textarea>
-                </div>
-                <div class="form-group col-lg-12">
-                  <button type="submit" class="btn btn-outline-primary w-100">Send message</button>
-                </div>
-              </div>
-            </form> -->
           </div>
         </div>
       </div>
@@ -261,5 +246,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"> </script>
     <script src="js/front.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css">
   </body>
 </html>

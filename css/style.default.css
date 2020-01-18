@@ -199,7 +199,7 @@ section {
 }
 
 .link-scroll.active {
-  color: #5091da;
+  color: #38679c;
 }
 
 @media (min-width: 992px) {
@@ -209,7 +209,7 @@ section {
 }
 
 .text-gray {
-  color: #999 !important;
+  color: #666 !important;
 }
 
 /*
