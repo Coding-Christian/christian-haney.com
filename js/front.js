@@ -46,18 +46,42 @@ $(function () {
         $('#projectDetails').addClass('d-none');
     }
 
+    function showProjectDetails(jQueryObj) {
+        jQueryObj.attr('href', '#projectDetails');
+        jQueryObj.text('Less Details');
+        jQueryObj.addClass('active-details');
+        $('#projectDetails > *').addClass('d-none');
+        $('#projectDetails').removeClass('d-none');
+    }
+
     $('#freshDetailsLink').on('click', function() {
         const $this = $(this);
         if ($this.hasClass('active-details')) {
             hideProjectDetails($this);
         } else {
-            $this.attr('href', '#projectDetails');
-            $this.text('Less Details');
-            $this.addClass('active-details');
-            $('#projectDetails > *').addClass('d-none');
-            $('#projectDetails').removeClass('d-none');
+            showProjectDetails($this);
             $('#freshDetails').removeClass('d-none');
         }
-    })
+    });
+
+    $('#cellarDetailsLink').on('click', function() {
+        const $this = $(this);
+        if ($this.hasClass('active-details')) {
+            hideProjectDetails($this);
+        } else {
+            showProjectDetails($this);
+            $('#cellarDetails').removeClass('d-none');
+        }
+    });
+
+    $('#memoryDetailsLink').on('click', function() {
+        const $this = $(this);
+        if ($this.hasClass('active-details')) {
+            hideProjectDetails($this);
+        } else {
+            showProjectDetails($this);
+            $('#memoryDetails').removeClass('d-none');
+        }
+    });
 
 });
