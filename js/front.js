@@ -32,63 +32,56 @@ $(function () {
             $('.navbar-collapse').removeClass('show');
             $('.navbar-toggler').attr('aria-expanded', 'false');
         }
-    });
+    })
 
     // ---------------------------------------------------------- //
-    // Map init
+    // Project Details Click Handlers
     // ---------------------------------------------------------- //
 
-    map();
-
-});
-
-// ------------------------------------------------------ //
-// styled Leaflet  Map
-// ------------------------------------------------------ //
-
-function map() {
-
-    var mapId = 'map',
-        mapCenter = [33.7495, -117.8263],
-        mapMarker = true;
-
-    if ($('#' + mapId).length > 0) {
-
-        var icon = L.icon({
-            iconUrl: 'img/marker.png',
-            iconSize: [25, 37.5],
-            popupAnchor: [0, -18],
-            tooltipAnchor: [0, 19]
-        });
-
-        var map = L.map(mapId, {
-            center: mapCenter,
-            zoom: 13,
-            zoomControl: false,
-            doubleClickZoom: false,
-            dragging: false,
-            tap: false,
-            scrollWheelZoom: false
-        });
-
-        var Wikimedia = L.tileLayer('https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}{r}.png', {
-            attribution: '<a href="https://wikimediafoundation.org/wiki/Maps_Terms_of_Use">Wikimedia</a>'
-        });
-
-        Wikimedia.addTo(map);
-
-        if (mapMarker) {
-            var marker = L.marker(mapCenter, {
-                icon: icon
-            }).addTo(map);
-
-            marker.bindPopup("<div><p class='font-weight-bold'>I live in Tustin, CA and am open to any opportunities in Orange County and South Los Angeles County.</p></div>", {
-                minwidth: 200,
-                maxWidth: 600,
-                className: 'map-custom-popup'
-            })
-
-        }
+    function hideProjectDetails(jQueryObj) {
+        jQueryObj.attr('href', '#projects');
+        jQueryObj.text('More Details');
+        jQueryObj.removeClass('active-details');
+        $('#projectDetails > *').addClass('d-none');
+        $('#projectDetails').addClass('d-none');
     }
 
-}
+    function showProjectDetails(jQueryObj) {
+        jQueryObj.attr('href', '#projectDetails');
+        jQueryObj.text('Less Details');
+        jQueryObj.addClass('active-details');
+        $('#projectDetails > *').addClass('d-none');
+        $('#projectDetails').removeClass('d-none');
+    }
+
+    $('#freshDetailsLink').on('click', function() {
+        const $this = $(this);
+        if ($this.hasClass('active-details')) {
+            hideProjectDetails($this);
+        } else {
+            showProjectDetails($this);
+            $('#freshDetails').removeClass('d-none');
+        }
+    });
+
+    $('#cellarDetailsLink').on('click', function() {
+        const $this = $(this);
+        if ($this.hasClass('active-details')) {
+            hideProjectDetails($this);
+        } else {
+            showProjectDetails($this);
+            $('#cellarDetails').removeClass('d-none');
+        }
+    });
+
+    $('#memoryDetailsLink').on('click', function() {
+        const $this = $(this);
+        if ($this.hasClass('active-details')) {
+            hideProjectDetails($this);
+        } else {
+            showProjectDetails($this);
+            $('#memoryDetails').removeClass('d-none');
+        }
+    });
+
+});
