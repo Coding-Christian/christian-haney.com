@@ -34,4 +34,30 @@ $(function () {
         }
     })
 
+    // ---------------------------------------------------------- //
+    // Project Details Click Handlers
+    // ---------------------------------------------------------- //
+
+    function hideProjectDetails(jQueryObj) {
+        jQueryObj.attr('href', '#projects');
+        jQueryObj.text('More Details');
+        jQueryObj.removeClass('active-details');
+        $('#projectDetails > *').addClass('d-none');
+        $('#projectDetails').addClass('d-none');
+    }
+
+    $('#freshDetailsLink').on('click', function() {
+        const $this = $(this);
+        if ($this.hasClass('active-details')) {
+            hideProjectDetails($this);
+        } else {
+            $this.attr('href', '#projectDetails');
+            $this.text('Less Details');
+            $this.addClass('active-details');
+            $('#projectDetails > *').addClass('d-none');
+            $('#projectDetails').removeClass('d-none');
+            $('#freshDetails').removeClass('d-none');
+        }
+    })
+
 });
