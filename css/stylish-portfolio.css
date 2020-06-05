@@ -398,3 +398,22 @@ a:hover, a:focus, a:active {
   -webkit-animation-timing-function: ease-in;
   animation-timing-function: ease-in;
 }
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(1vh);
+  visibility: hidden;
+  transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
+  will-change: opacity, visibility;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+.faded {
+  transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
+  will-change: opacity, visibility;
+}
