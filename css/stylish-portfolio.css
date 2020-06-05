@@ -363,3 +363,38 @@ a:hover, a:focus, a:active {
 .text-secondary {
   color: #ecb807 !important;
 }
+
+@-webkit-keyframes Shine {
+  0% {
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to top left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 45%, rgba(255, 255, 255, 0.1) 48%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 52%, rgba(255, 255, 255, 0) 57%, rgba(255, 255, 255, 0) 100%);
+    background-position: -300px -300px;
+    background-size: 600px 600px;
+  }
+  100% {
+    background-repeat: no-repeat;
+    background-position: 300px 300px;
+  }
+}
+
+@keyframes Shine {
+  0% {
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to top left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 45%, rgba(255, 255, 255, 0.1) 48%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 52%, rgba(255, 255, 255, 0) 57%, rgba(255, 255, 255, 0) 100%);
+    background-position: -300px -300px;
+    background-size: 600px 600px;
+  }
+  100% {
+    background-repeat: no-repeat;
+    background-position: 300px 300px;
+  }
+}
+
+.shine {
+  -webkit-animation-name: Shine;
+  animation-name: Shine;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+}

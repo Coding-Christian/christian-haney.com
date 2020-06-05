@@ -1,10 +1,39 @@
-@import "variables";
-@import "mixins";
-@import "global";
-@import "masthead";
-@import "sidebar";
-@import "services";
-@import "callout";
-@import "portfolio";
-@import "footer";
-@import "bootstrap-overrides";
+@import 'variables';
+@import 'mixins';
+@import 'global';
+@import 'masthead';
+@import 'sidebar';
+@import 'services';
+@import 'callout';
+@import 'portfolio';
+@import 'footer';
+@import 'bootstrap-overrides';
+
+@keyframes Shine {
+  0% {
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+      to top left,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0) 45%,
+      rgba(255, 255, 255, 0.1) 48%,
+      rgba(255, 255, 255, 0.2) 50%,
+      rgba(255, 255, 255, 0.1) 52%,
+      rgba(255, 255, 255, 0) 57%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    background-position: -300px -300px;
+    background-size: 600px 600px;
+  }
+  100% {
+    background-repeat: no-repeat;
+    background-position: 300px 300px;
+  }
+}
+
+.shine {
+  animation-name: Shine;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  // animation-timing-function: cubic-bezier(0.12, 0.89, 0.98, 0.47);
+}
