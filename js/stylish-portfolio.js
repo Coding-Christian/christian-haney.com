@@ -58,33 +58,22 @@
     var left = el.offsetLeft;
     var width = el.offsetWidth;
     var height = el.offsetHeight;
+
     while (el.offsetParent) {
       el = el.offsetParent;
       top += el.offsetTop;
       left += el.offsetLeft;
     }
+
     return (
-      top >= window.pageYOffset &&
-      left >= window.pageXOffset &&
-      top + height <= window.pageYOffset + window.innerHeight &&
-      left + width <= window.pageXOffset + window.innerWidth
+      top < window.pageYOffset + window.innerHeight &&
+      left < window.pageXOffset + window.innerWidth &&
+      top + height > window.pageYOffset &&
+      left + width > window.pageXOffset
     );
   }
-
-  $('.btn').on('mouseenter', function (event) {
-    if (!$(event.target).hasClass('shine')) {
-      console.log('here');
-      $(event.target).toggleClass('shine');
-      setTimeout(function () {
-        $(event.target).toggleClass('shine');
-      }, 500);
-    }
-  });
-  setTimeout(function () {
-    $('.fade-in').first().toggleClass('is-visible');
-  }, 0);
-  $(document).scroll(function () {
-    this.querySelectorAll('.fade-in').forEach(function (el) {
+  function toggleVisibleElems() {
+    document.querySelectorAll('.fade-in').forEach(function (el, i) {
       if (elementInViewport(el)) {
         $(el)
           .toggleClass('is-visible')
@@ -92,7 +81,18 @@
           .toggleClass('fade-in');
       }
     });
+  }
+
+  $('.btn').on('mouseenter', function (event) {
+    if (!$(event.target).hasClass('shine')) {
+      $(event.target).toggleClass('shine');
+      setTimeout(function () {
+        $(event.target).toggleClass('shine');
+      }, 500);
+    }
   });
+  toggleVisibleElems();
+  $(document).scroll(toggleVisibleElems);
 })(jQuery); // End of use strict
 
 // Disable Google Maps scrolling

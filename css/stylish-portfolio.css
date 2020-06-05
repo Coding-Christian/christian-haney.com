@@ -414,6 +414,21 @@ a:hover, a:focus, a:active {
 }
 
 .faded {
-  transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
+  transition: opacity 0.75s ease-in-out 0.25s, transform 0.75s ease-in-out 0.25s;
   will-change: opacity, visibility;
+}
+
+div.about-img {
+  position: relative;
+  min-height: 352px;
+  background-image: url("../img/accent-image.png");
+  background-position: bottom right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.about-img img {
+  position: absolute;
+  bottom: 5%;
+  width: 87.5%;
 }

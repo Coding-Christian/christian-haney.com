@@ -9,6 +9,7 @@
 @import 'footer';
 @import 'bootstrap-overrides';
 
+// ANIMATIONS //
 @keyframes Shine {
   0% {
     background-repeat: no-repeat;
@@ -52,6 +53,23 @@
 }
 
 .faded {
-  transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
+  transition: opacity 0.75s ease-in-out 0.25s, transform 0.75s ease-in-out 0.25s;
   will-change: opacity, visibility;
+}
+
+// ABOUT SECTION //
+
+div.about-img {
+  position: relative;
+  min-height: 352px;
+  background-image: url('../img/accent-image.png');
+  background-position: bottom right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.about-img img {
+  position: absolute;
+  bottom: 5%;
+  width: 87.5%;
 }
