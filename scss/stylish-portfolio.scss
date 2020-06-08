@@ -31,7 +31,6 @@
     background-position: 300px 300px;
   }
 }
-
 .shine {
   animation-name: Shine;
   animation-duration: 0.5s;
@@ -51,7 +50,6 @@
   transform: none;
   visibility: visible;
 }
-
 .faded {
   transition: opacity 0.75s ease-in-out 0.25s, transform 0.75s ease-in-out 0.25s;
   will-change: opacity, visibility;
@@ -66,7 +64,12 @@ div.about-img {
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 .about-img img {
   width: 93%;
+}
+
+// SKILLS SECTION //
+.skill-icon {
+  height: 4rem;
+  width: 4rem;
 }

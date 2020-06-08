@@ -429,3 +429,8 @@ div.about-img {
 .about-img img {
   width: 93%;
 }
+
+.skill-icon {
+  height: 4rem;
+  width: 4rem;
+}
