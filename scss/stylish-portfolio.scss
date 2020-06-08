@@ -61,15 +61,12 @@
 
 div.about-img {
   position: relative;
-  min-height: 352px;
   background-image: url('../img/accent-image.png');
-  background-position: bottom right;
+  background-position: center right;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .about-img img {
-  position: absolute;
-  bottom: 5%;
-  width: 87.5%;
+  width: 93%;
 }
