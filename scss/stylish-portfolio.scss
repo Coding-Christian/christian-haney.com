@@ -55,6 +55,11 @@
   will-change: opacity, visibility;
 }
 
+// PAGE WIDE //
+.bg-secondary {
+  background-color: $secondary !important;
+}
+
 // ABOUT SECTION //
 
 div.about-img {
@@ -69,7 +74,15 @@ div.about-img {
 }
 
 // SKILLS SECTION //
+
 .skill-icon {
   height: 4rem;
   width: 4rem;
+}
+.skill {
+  transition: all 0.1s ease-in-out;
+  transform-origin: center;
+}
+.skill:hover {
+  transform: scale(1.05);
 }

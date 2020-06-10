@@ -418,6 +418,10 @@ a:hover, a:focus, a:active {
   will-change: opacity, visibility;
 }
 
+.bg-secondary {
+  background-color: #ecb807 !important;
+}
+
 div.about-img {
   position: relative;
   background-image: url("../img/accent-image.png");
@@ -433,4 +437,13 @@ div.about-img {
 .skill-icon {
   height: 4rem;
   width: 4rem;
+}
+
+.skill {
+  transition: all 0.1s ease-in-out;
+  transform-origin: center;
+}
+
+.skill:hover {
+  transform: scale(1.05);
 }
