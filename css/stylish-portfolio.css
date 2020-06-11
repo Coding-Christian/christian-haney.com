@@ -247,7 +247,6 @@ h6 {
 
 .portfolio-item .caption .caption-content {
   color: #fff;
-  margin: auto 2rem 2rem;
 }
 
 .portfolio-item .caption .caption-content h2 {
@@ -272,9 +271,6 @@ h6 {
   }
   .portfolio-item .caption .caption-content {
     transition: opacity 0.25s;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-bottom: 5rem;
   }
   .portfolio-item img {
     -webkit-transition: -webkit-clip-path 0.25s ease-out;
@@ -282,13 +278,13 @@ h6 {
     clip-path: inset(-1px);
   }
   .portfolio-item:hover img {
-    -webkit-clip-path: inset(2rem);
-    clip-path: inset(2rem);
+    -webkit-clip-path: inset(0.5rem);
+    clip-path: inset(0.5rem);
   }
   .portfolio-item:hover .caption {
     background-color: rgba(29, 128, 159, 0.9);
-    -webkit-clip-path: inset(2rem);
-    clip-path: inset(2rem);
+    -webkit-clip-path: inset(0.5rem);
+    clip-path: inset(0.5rem);
   }
 }
 
@@ -446,4 +442,13 @@ div.about-img {
 
 .skill:hover {
   transform: scale(1.05);
+}
+
+.caption-content {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 50%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
 }

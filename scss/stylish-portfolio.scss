@@ -86,3 +86,11 @@ div.about-img {
 .skill:hover {
   transform: scale(1.05);
 }
+// PROJECT SECTION //
+
+.caption-content {
+  height: fit-content;
+  min-height: 50%;
+  width: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.25);
+}
