@@ -272,12 +272,12 @@ h6 {
   .portfolio-item .caption .caption-content {
     transition: opacity 0.25s;
   }
-  .portfolio-item img {
+  .portfolio-item > img {
     -webkit-transition: -webkit-clip-path 0.25s ease-out;
     -webkit-clip-path: inset(-1px);
     clip-path: inset(-1px);
   }
-  .portfolio-item:hover img {
+  .portfolio-item:hover > img {
     -webkit-clip-path: inset(0.5rem);
     clip-path: inset(0.5rem);
   }
@@ -418,6 +418,22 @@ a:hover, a:focus, a:active {
   background-color: #ecb807 !important;
 }
 
+.github-link,
+.live-site-link {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-size: contain;
+}
+
+.github-link {
+  background-image: url("../img/link-github.png");
+}
+
+.live-site-link {
+  background-image: url("../img/link-live-site.png");
+}
+
 div.about-img {
   position: relative;
   background-image: url("../img/accent-image.png");
@@ -444,6 +460,16 @@ div.about-img {
   transform: scale(1.05);
 }
 
+.portfolio-item {
+  height: 100%;
+}
+
+@media (max-width: 991px) {
+  .portfolio-item {
+    min-height: 50vh;
+  }
+}
+
 .caption-content {
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -451,4 +477,20 @@ div.about-img {
   min-height: 50%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.25);
+}
+
+.caption-content a {
+  color: #ffffff;
+}
+
+.caption-content a:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.portfolio-item > img {
+  min-height: 100%;
+  min-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
