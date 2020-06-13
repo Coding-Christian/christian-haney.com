@@ -399,7 +399,7 @@ a:hover, a:focus, a:active {
   opacity: 0;
   transform: translateY(1vh);
   visibility: hidden;
-  transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
+  transition: opacity 0.75s ease-in-out, translate 0.75s ease-in-out;
   will-change: opacity, visibility;
 }
 
@@ -410,7 +410,7 @@ a:hover, a:focus, a:active {
 }
 
 .faded {
-  transition: opacity 0.75s ease-in-out 0.25s, transform 0.75s ease-in-out 0.25s;
+  transition: opacity 0.75s ease-in-out 0.25s, translate 0.75s ease-in-out 0.25s;
   will-change: opacity, visibility;
 }
 
@@ -435,8 +435,8 @@ div.about-img {
   width: 4rem;
 }
 
-.skill {
-  transition: all 0.1s ease-in-out;
+.skill.faded {
+  transition: scale 0.1s ease-in-out, opacity 0.75s ease-in-out 0.25s, translate 0.75s ease-in-out 0.25s;
   transform-origin: center;
 }
 
