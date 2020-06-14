@@ -93,6 +93,17 @@
   });
   toggleVisibleElems();
   $(document).scroll(toggleVisibleElems);
+
+  $('.portfolio-item').mouseenter(function (e) {
+    var $target = $(e.currentTarget);
+    $target.find('.main-text').toggleClass('d-none');
+    $target.find('.alt-text').toggleClass('d-none');
+  });
+  $('.portfolio-item').mouseleave(function (e) {
+    var $target = $(e.currentTarget);
+    $target.find('.main-text').toggleClass('d-none');
+    $target.find('.alt-text').toggleClass('d-none');
+  });
 })(jQuery); // End of use strict
 
 // // Disable Google Maps scrolling
