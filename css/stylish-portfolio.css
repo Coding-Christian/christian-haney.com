@@ -490,6 +490,10 @@ div.about-img {
   object-fit: cover;
 }
 
+.resume-cta {
+  border-bottom: 1px solid #1D809F;
+}
+
 .logo-decoration {
   width: calc(50% - 125px);
   height: 1px;
