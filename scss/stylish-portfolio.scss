@@ -35,7 +35,6 @@
   animation-name: Shine;
   animation-duration: 0.5s;
   animation-timing-function: ease-in;
-  // animation-timing-function: cubic-bezier(0.12, 0.89, 0.98, 0.47);
 }
 
 .fade-in {
@@ -56,6 +55,7 @@
 }
 
 // PAGE WIDE //
+
 .bg-secondary {
   background-color: $secondary !important;
 }
@@ -72,6 +72,7 @@
 .live-site-link {
   background-image: url('../img/link-live-site.png');
 }
+
 // ABOUT SECTION //
 
 div.about-img {
@@ -99,6 +100,7 @@ div.about-img {
 .skill:hover {
   transform: scale(1.05);
 }
+
 // PROJECT SECTION //
 
 .portfolio-item {
@@ -113,7 +115,6 @@ div.about-img {
   width: 100%;
   background-color: rgba($color: #000000, $alpha: 0.25);
 }
-
 .caption-content a {
   color: #ffffff;
 }
@@ -121,4 +122,12 @@ div.about-img {
   min-height: 100%;
   min-width: 100%;
   object-fit: cover;
+}
+
+// FOOTER //
+
+.logo-decoration {
+  width: calc(50% - 125px);
+  height: 1px;
+  background-color: $primary;
 }

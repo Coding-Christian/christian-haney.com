@@ -489,3 +489,9 @@ div.about-img {
   -o-object-fit: cover;
   object-fit: cover;
 }
+
+.logo-decoration {
+  width: calc(50% - 125px);
+  height: 1px;
+  background-color: #1D809F;
+}
