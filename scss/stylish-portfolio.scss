@@ -1,0 +1,139 @@
+@import 'variables';
+@import 'mixins';
+@import 'global';
+@import 'masthead';
+@import 'sidebar';
+@import 'services';
+@import 'callout';
+@import 'portfolio';
+@import 'footer';
+@import 'bootstrap-overrides';
+
+// ANIMATIONS //
+@keyframes Shine {
+  0% {
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+      to top left,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0) 45%,
+      rgba(255, 255, 255, 0.1) 48%,
+      rgba(255, 255, 255, 0.2) 50%,
+      rgba(255, 255, 255, 0.1) 52%,
+      rgba(255, 255, 255, 0) 57%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    background-position: -300px -300px;
+    background-size: 600px 600px;
+  }
+  100% {
+    background-repeat: no-repeat;
+    background-position: 300px 300px;
+  }
+}
+.shine {
+  animation-name: Shine;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(1vh);
+  visibility: hidden;
+  transition: opacity 0.75s ease-in-out, translate 0.75s ease-in-out;
+  will-change: opacity, visibility;
+}
+.fade-in.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+.faded {
+  transition: opacity 0.75s ease-in-out 0.25s, translate 0.75s ease-in-out 0.25s;
+  will-change: opacity, visibility;
+}
+
+// PAGE WIDE //
+
+.bg-secondary {
+  background-color: $secondary !important;
+}
+.github-link,
+.live-site-link {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-size: contain;
+}
+.github-link {
+  background-image: url('../img/link-github.png');
+}
+.live-site-link {
+  background-image: url('../img/link-live-site.png');
+}
+
+// ABOUT SECTION //
+
+div.about-img {
+  position: relative;
+  background-image: url('../img/accent-image.png');
+  background-position: center right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.about-img img {
+  width: 93%;
+}
+
+// SKILLS SECTION //
+
+.skill-icon {
+  height: 4rem;
+  width: 4rem;
+}
+.skill.faded {
+  transition: scale 0.1s ease-in-out, opacity 0.75s ease-in-out 0.25s,
+    translate 0.75s ease-in-out 0.25s;
+  transform-origin: center;
+}
+.skill:hover {
+  transform: scale(1.05);
+}
+
+// PROJECT SECTION //
+
+.portfolio-item {
+  height: 100%;
+  @media (max-width: 991px) {
+    min-height: 50vh;
+  }
+}
+.caption-content {
+  height: fit-content;
+  min-height: 50%;
+  width: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.25);
+}
+.caption-content a {
+  color: #ffffff;
+}
+.portfolio-item > img {
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+// CONTACT SECTION //
+
+.resume-cta {
+  border-bottom: 1px solid $primary;
+}
+
+// FOOTER //
+
+.logo-decoration {
+  width: calc(50% - 125px);
+  height: 1px;
+  background-color: $primary;
+}

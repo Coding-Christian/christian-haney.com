@@ -1,349 +1,797 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Author: Christian Haney, Profession: full-stack web developer, Languages/Libraries: JavaScript, React, Node, PHP, SQL, jQuery, Bootstrap, HTML, CSS, Python">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="all,follow">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css" integrity="sha256-auPoJwk/+RK6KSkib92Dkq1Y5hEkZvKtvSwucs15Skg=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
-    <link rel="stylesheet" href="css/custom.css">
-    <link rel="shortcut icon" href="img/favicon.png">
-    <title>Christian Haney</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Meet Christian Haney: A full stack software engineer with experience in React, Node, PHP, Shopify, WorPress, UI/UX and more..."
+    />
+    <meta name="author" content="Christian Haney" />
+
+    <title>Stylish Portfolio - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom Fonts -->
+    <link
+      href="vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.min.css" rel="stylesheet" />
   </head>
-  <body>
-    <section id="intro" style="background: url(img/la-skyline.jpg)" class="hero bg-cover">
+
+  <body id="page-top">
+    <!-- Navigation -->
+    <a class="menu-toggle rounded" href="#">
+      <i class="fas fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand d-flex align-items-center">
+          <a class="js-scroll-trigger" href="#page-top">
+            <h2 class="m-0">Menu</h2>
+          </a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#page-top">Home</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#skills">Skills</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Hero -->
+    <header class="masthead d-flex">
+      <div class="fade-in container text-center my-auto">
+        <h1 class="mb-2 mb-md-1">Christian Haney</h1>
+        <h3 class="mb-2 mb-md-1">
+          <em>React | Node | PHP | Shopify | Wordpress | UI/UX</em>
+        </h3>
+        <h2 class="mb-4 mb-md-5">Full Stack Software Engineer</h2>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about"
+          >Meet Christian</a
+        >
+      </div>
       <div class="overlay"></div>
-      <div class="content h-100 d-flex align-items-center">
-        <div class="container text-center text-white">
-          <p class="headings-font-family text-uppercase lead">Hi! My name is</p>
-          <h1 class="text-uppercase hero-text text-white"><span class="font-weight-bold d-block"></span>Christian Haney</h1>
-          <p class="headings-font-family text-uppercase lead">Full Stack - React | JavaScript | Node | PHP | SQL | HTML | CSS</p>
-        </div>
-      </div>
-      <a href="#about" class="scroll-btn link-scroll">
-        <i class="fas fa-angle-double-down"></i>
-        <span class="sr-only">Scroll to next section</span>
-      </a>
-    </section>
-    <header class="header sticky-top">
-      <nav class="navbar navbar-expand-lg bg-white border-bottom py-0">
-        <div class="container"><a href="#" class="navbar-brand py-1"><img src="img/logo.png" alt="Home" class="img-fluid"></a>
-          <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><span class="fas fa-bars"></span></button>
-          <div id="navbarSupportedContent" class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto px-3">
-              <li class="nav-item active"><a href="#intro" class="nav-link text-uppercase link-scroll">Home </a></li>
-              <li class="nav-item"><a href="#about" class="nav-link text-uppercase link-scroll">About</a></li>
-              <li class="nav-item"><a href="#skills" class="nav-link text-uppercase link-scroll">Skills</a></li>
-              <li class="nav-item"><a href="#projects" class="nav-link text-uppercase link-scroll">Projects</a></li>
-              <li class="nav-item"><a href="#contact" class="nav-link text-uppercase link-scroll">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
     </header>
-    <section id="about" class="about">
+
+    <!-- About -->
+    <section class="content-section bg-light" id="about">
       <div class="container">
-        <header class="text-center mb-5">
-          <h2 class="lined text-uppercase">About Me</h2>
-        </header>
-        <div class="row mb-4">
+        <div class="content-section-heading text-center">
+          <h3 class="text-secondary">About Christian</h3>
+          <h2 class="my-5">
+            A video game loving chemist turned full stack software engineer
+          </h2>
+        </div>
+        <div class="row text-justify">
+          <div
+            class="col-lg-6 mx-auto order-2 order-lg-1 mb-5 d-flex align-items-center"
+          >
+            <p>
+              <strong>Hi, I'm Christian!</strong> I grew up in San Diego, CA and
+              have been passionate about math and science from a very young age,
+              thanks to my intelligent, loving, and supportive parents. I
+              excelled in STEM classes throughout grade school and eventually
+              moved to Irvine, CA to pursue a BS in Chemistry at the University
+              of California, Irvine. At UCI, I worked hard to hone my laboratory
+              skills and explore my interests. I made many friends along the
+              way, some of which were pursuing degrees in Computer Science.
+              After listening to my friends talk with excitement about their
+              experiences learning programming, I decided to take a Python
+              course to see for myself. The course taught us about simple
+              functions and writing algorithms, and ended with a brief
+              introduction into some of the libraries Python had to offer that
+              added additional functionality to the language, like graphics and
+              advanced mathematics. By the end of the course, I had thoroughly
+              enjoyed learning about Python and the problem solving
+              opportunities being a programmer presented.
+            </p>
+          </div>
+          <div
+            class="about-img fade-in col-lg-6 mx-auto order-1 order-lg-2 mb-5 d-flex align-items-center"
+          >
+            <img
+              src="img/about-childhood.jpg"
+              alt="Christian's AP Biology class field trip"
+            />
+          </div>
+          <div
+            class="about-img fade-in col-lg-6 mx-auto order-3 mb-5 d-flex align-items-center"
+          >
+            <img src="img/about-learningfuze.jpg" alt="Fresh.vg Team Photo" />
+          </div>
+          <div class="col-lg-6 mx-auto order-4 mb-5 d-flex align-items-center">
+            <p>
+              I went on to graduate with my BS in Chemistry and a 3.294 GPA,
+              which eventually led me to a contracted Chemical Technician
+              position at HP, back in San Diego. After about 9 months at HP, I
+              knew I had an important decision to make. In order to continue my
+              career in the field of Chemistry, I would have to return to school
+              to earn a graduate degree and qualify for the higher level
+              positions. On the other hand, I could pursue the passion for
+              programming that I had discovered at UCI. I knew both would have
+              their costs and risks, but I could not miss this opportunity to
+              pursue my passion. I began researching accelerated programs for
+              beginner programmers and discovered LearningFuze in Irvine. I
+              attended an info session and was in awe of the dedication and
+              kindness the staff showed both their students and alumni. I was
+              confident that LearningFuze would be able to offer me the tutelage
+              and support I needed to make the transition between careers.
+            </p>
+          </div>
+          <div
+            class="col-lg-6 mx-auto order-6 order-lg-5 mb-5 d-flex align-items-center"
+          >
+            <p>
+              During my 12 weeks at LearningFuze, I spent about 700 hours
+              learning web development alongside 18 other bright and eager minds
+              with the help of professionals with decades of experience. I was
+              excited to learn full stack skills, from UI and UX design to
+              databases and data structures, and how these concepts helped
+              people create the websites we use every day. I got to work on both
+              solo and group projects that familiarized myself with some of the
+              most popular languages, libraries, frameworks, and tools. My time
+              at LearningFuze allowed me to grow, meet new friends, and confirm
+              what I had always known: I was destined to be a programmer. Now, I
+              am working at LearningFuze as a teaching assistant, helping others
+              follow the same path I did, as well as at Shyft Creative, a Los
+              Angeles based development firm. At Shyft, I help maintain and
+              create websites and digital storefronts for companies using tools
+              like WordPress, Shopify, and Gatsby that see thousands of daily
+              visitors.
+            </p>
+          </div>
+          <div
+            class="about-img fade-in col-lg-6 mx-auto order-5 order-lg-6 mb-5 d-flex align-items-center"
+          >
+            <img src="img/about-learningfuze.jpg" alt="Fresh.vg Team Photo" />
+          </div>
+          <div class="col-12 text-center order-7">
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#contact"
+              >Contact Me</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section
+      class="content-section bg-primary text-white text-center"
+      id="skills"
+    >
+      <div class="container">
+        <div class="content-section-heading">
+          <h3 class="text-secondary">Skills / Experience</h3>
+          <h2 class="my-5">
+            Christian knows how to get it done
+          </h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="skill fade-in col-lg-3 col-md-4 col-6 mb-5">
+            <span
+              class="service-icon rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center"
+            >
+              <img src="img/icon-js.svg" alt="JavaScript" class="skill-icon" />
+            </span>
+            <h4>
+              <strong>JavaScript</strong>
+            </h4>
+          </div>
+          <div class="skill fade-in col-lg-3 col-md-4 col-6 mb-5">
+            <span
+              class="service-icon rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center"
+            >
+              <img src="img/icon-react.svg" alt="React.js" class="skill-icon" />
+            </span>
+            <h4>
+              <strong>React.js</strong>
+            </h4>
+          </div>
+          <div class="skill fade-in col-lg-3 col-md-4 col-6 mb-5">
+            <span
+              class="service-icon rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center"
+            >
+              <img src="img/icon-html.svg" alt="HTML5" class="skill-icon" />
+            </span>
+            <h4>
+              <strong>HTML5</strong>
+            </h4>
+          </div>
+          <div class="skill fade-in col-lg-3 col-md-4 col-6 mb-5">
+            <span
+              class="service-icon rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center"
+            >
+              <img src="img/icon-css.svg" alt="CSS3" class="skill-icon" />
+            </span>
+            <h4>
+              <strong>CSS3</strong>
+            </h4>
+          </div>
+          <div class="skill fade-in col-lg-3 col-md-4 col-6 mb-5">
+            <span
+              class="service-icon rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center"
+            >
+              <img src="img/icon-jquery.svg" alt="JQuery" class="skill-icon" />
+            </span>
+            <h4>
+              <strong>JQuery</strong>
+            </h4>
+          </div>
+          <div class="skill fade-in col-lg-3 col-md-4 col-6 mb-5">
+            <span
+              class="service-icon rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="img/icon-bootstrap.svg"
+                alt="Bootstrap"
+                class="skill-icon"
+              />
+            </span>
+            <h4>
+              <strong>Bootstrap</strong>
+            </h4>
+          </div>
+          <div class="skill fade-in col-lg-3 col-md-4 col-6 mb-5">
+            <span
+              class="service-icon rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center"
+            >
+              <img src="img/icon-php.svg" alt="PHP" class="skill-icon" />
+            </span>
+            <h4>
+              <strong>PHP</strong>
+            </h4>
+          </div>
+          <div class="skill fade-in col-lg-3 col-md-4 col-6 mb-5">
+            <span
+              class="service-icon rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center"
+            >
+              <img src="img/icon-node.svg" alt="Node.js" class="skill-icon" />
+            </span>
+            <h4>
+              <strong>Node.js</strong>
+            </h4>
+          </div>
+          <div class="skill fade-in col-lg-3 col-md-4 col-6 mb-5">
+            <span
+              class="service-icon rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="img/icon-express.svg"
+                alt="Express.js"
+                class="skill-icon"
+              />
+            </span>
+            <h4>
+              <strong>Express.js</strong>
+            </h4>
+          </div>
+          <div class="skill fade-in col-lg-3 col-md-4 col-6 mb-5">
+            <span
+              class="service-icon rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center"
+            >
+              <img src="img/icon-mysql.svg" alt="MySQL" class="skill-icon" />
+            </span>
+            <h4>
+              <strong>MySQL</strong>
+            </h4>
+          </div>
+          <div class="skill fade-in col-lg-3 col-md-4 col-6 mb-5">
+            <span
+              class="service-icon rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="img/icon-emotion.png"
+                alt="Emotion.js"
+                class="skill-icon"
+              />
+            </span>
+            <h4>
+              <strong>Emotion.js</strong>
+            </h4>
+          </div>
+          <div class="skill fade-in col-lg-3 col-md-4 col-6 mb-5">
+            <span
+              class="service-icon rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center"
+            >
+              <img src="img/icon-sass.svg" alt="Sass" class="skill-icon" />
+            </span>
+            <h4>
+              <strong>Sass</strong>
+            </h4>
+          </div>
+          <div class="skill fade-in col-lg-3 col-md-4 col-6 mb-5">
+            <span
+              class="service-icon rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center"
+            >
+              <img src="img/icon-git.svg" alt="Git" class="skill-icon" />
+            </span>
+            <h4>
+              <strong>Git</strong>
+            </h4>
+          </div>
+          <div class="skill fade-in col-lg-3 col-md-4 col-6 mb-5">
+            <span
+              class="service-icon rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="img/icon-python.svg"
+                alt="Python 3"
+                class="skill-icon"
+              />
+            </span>
+            <h4>
+              <strong>Python 3</strong>
+            </h4>
+          </div>
+        </div>
+        <div class="content-section-heading">
+          <h2 class="my-5">Christian knows the right tool for the job</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="skill fade-in col-lg-3 col-md-4 col-6 mb-5">
+            <span
+              class="service-icon rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="img/tool-icon-shopify.svg"
+                alt="Shopify"
+                class="skill-icon"
+              />
+            </span>
+            <h4>
+              <strong>Shopify</strong>
+            </h4>
+          </div>
+          <div class="skill fade-in col-lg-3 col-md-4 col-6 mb-5">
+            <span
+              class="service-icon rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="img/tool-icon-wordpress.svg"
+                alt="WordPress"
+                class="skill-icon"
+              />
+            </span>
+            <h4>
+              <strong>WordPress</strong>
+            </h4>
+          </div>
+          <div class="skill fade-in col-lg-3 col-md-4 col-6 mb-5">
+            <span
+              class="service-icon rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="img/tool-icon-gatsby.svg"
+                alt="Gatsby"
+                class="skill-icon"
+              />
+            </span>
+            <h4>
+              <strong>Gatsby</strong>
+            </h4>
+          </div>
+          <div class="skill fade-in col-lg-3 col-md-4 col-6 mb-5">
+            <span
+              class="service-icon rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="img/tool-icon-github.svg"
+                alt="GitHub"
+                class="skill-icon"
+              />
+            </span>
+            <h4>
+              <strong>GitHub</strong>
+            </h4>
+          </div>
+          <div class="skill fade-in col-lg-3 col-md-4 col-6 mb-5">
+            <span
+              class="service-icon rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center"
+            >
+              <img src="img/tool-icon-npm.svg" alt="npm" class="skill-icon" />
+            </span>
+            <h4>
+              <strong>npm</strong>
+            </h4>
+          </div>
+          <div class="skill fade-in col-lg-3 col-md-4 col-6 mb-5">
+            <span
+              class="service-icon rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="img/tool-icon-webpack.svg"
+                alt="Webpack"
+                class="skill-icon"
+              />
+            </span>
+            <h4>
+              <strong>Webpack</strong>
+            </h4>
+          </div>
+          <div class="skill fade-in col-lg-3 col-md-4 col-6 mb-5">
+            <span
+              class="service-icon rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="img/tool-icon-babel.svg"
+                alt="Babel"
+                class="skill-icon"
+              />
+            </span>
+            <h4>
+              <strong>Babel</strong>
+            </h4>
+          </div>
+          <div class="skill fade-in col-lg-3 col-md-4 col-6 mb-5">
+            <span
+              class="service-icon rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="img/tool-icon-figma.svg"
+                alt="Figma"
+                class="skill-icon"
+              />
+            </span>
+            <h4>
+              <strong>Figma</strong>
+            </h4>
+          </div>
+          <div class="skill fade-in col-lg-3 col-md-4 col-6 mb-5">
+            <span
+              class="service-icon rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="img/tool-icon-meistertask.png"
+                alt="MeisterTask"
+                class="skill-icon"
+              />
+            </span>
+            <h4>
+              <strong>MeisterTask</strong>
+            </h4>
+          </div>
+          <div class="skill fade-in col-lg-3 col-md-4 col-6 mb-5">
+            <span
+              class="service-icon rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="img/tool-icon-slack.svg"
+                alt="Slack"
+                class="skill-icon"
+              />
+            </span>
+            <h4>
+              <strong>Slack</strong>
+            </h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Callout -->
+    <!-- <section class="callout">
+      <div class="container text-center">
+        <h2 class="mx-auto mb-5">
+          Welcome to
+          <em>your</em>
+          next website!
+        </h2>
+        <a
+          class="btn btn-primary btn-xl"
+          href="https://startbootstrap.com/template-overviews/stylish-portfolio/"
+          >Download Now!</a
+        >
+      </div>
+    </section> -->
+
+    <!-- Portfolio -->
+    <section class="content-section" id="portfolio">
+      <div class="container">
+        <div class="content-section-heading text-center">
+          <h3 class="text-secondary mb-0">Portfolio</h3>
+          <h2 class="mb-5">Some of Christian's Creations</h2>
+        </div>
+        <div class="row no-gutters">
           <div class="col-lg-6">
-            <p class="lead mb-4">My Journey from Chemist to Programmer.</p>
-            <p class="text-justify">
-              I grew up in San Diego, CA and have been passionate about math and science from a very young age, thanks to my intelligent, loving, and supportive parents.
-              I excelled in STEM classes throughout grade school and eventually moved to Irvine, CA to pursue a BS in Chemistry at the University of California, Irvine.
-              At UCI, I worked hard to hone my laboratory skills and explore my interests. I made many friends along the way, some of which were pursuing degrees in Computer Science.
-              After listening to my friends talk with excitement about their expreiences learning programming, I decided to take an Python course to see for myself.
-              The course taught us about simple functions and writing algorithms, and ended with a brief introduction into some of the libraries Python had to offer that added additional functionality to the language, like graphics and advanced mathematics.
-              By the end of the course, I had thouroughly enjoyed learning about Python and the problem solving opportunities being a programmer presented.
-            </p>
-          </div>
-          <div class="col-lg-6 d-flex justify-content-center">
-            <img src="img/selfie.jpg" alt="Christian Haney in Long Beach" class="img-fluid">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 mb-3">
-            <p class="text-justify">
-              I went on to graduate with my BS in Chemistry and a 3.294 GPA, which eventually led me to a contracted Chemical
-              Technician position at HP, back in San Diego.
-              After about 9 months at HP, I knew I had an important decision to make. In order to continue my career in the field of
-              Chemistry, I would have to return to school to earn a graduate degree and qualify for the higher level positions.
-              On the other hand, I could pursue the passion for programming that I had discovered at UCI. I knew both would have their costs and risks, but I could not miss this opportunity to pursue my passion.
-              I began researching accelerated programs for beginner programmers and discovered LearningFuze in Irvine. I attended an info session and was in awe of the dedication and kindess the staff showed both their students and alumni.
-              I was confident that LearningFuze would be able to offer me the tutelage and support I needed to make the transition between careers.
-            </p>
-          </div>
-          <div class="col-12">
-            <p class="text-justify">
-              During my 12 weeks at LearningFuze, I spent about 700 hours learning web development alongside 18 other bright and eager minds with the help of professionals with decades of experience.
-              I was excited to learn full stack skills, from UI and UX design to databases and data structures, and how these concepts helped people create the websites we use every day.
-              I got to work on both solo and group projects that familiarized myself with some of the most popular languages, libraries, frameworks, and tools.
-              I took a special liking to React, for its ability to make the creation of dynamically changing websites easy and readable, and to Node, for its use in writing intuitive APIs in the familiar syntax of JavaScript.
-              Since the end of the program, I have continued to work on fleshing out some of the projects I worked on during my time at LearningFuze and am proud of where I stand today.
-              The path to web developer has been long and winding, but what I have learned about myself and the world along the way has been indespensible.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="skills" class="bg-gray">
-      <div class="container">
-        <header class="text-center mb-5">
-          <h2 class="lined text-uppercase">Technical Skills</h2>
-        </header>
-        <div class="row">
-          <div class="col-sm-6 col-lg-4 mb-4">
-            <div class="bg-white mb-4 p-4 h-100 d-flex flex-column">
-              <div>
-                <div class="text-center icon mb-2"><i class="fab fa-js-square fa-2x"></i></div>
-                <h4 class="text-uppercase text-center font-weight-bold">Languages</h4>
-              </div>
-              <ul class="mt-4">
-                <li>JavaScript (ES5, ES6)</li>
-                <li>PHP</li>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>SQL</li>
-                <li>Python 3</li>
-                <li>Git</li>
-              </ul>
+            <div class="portfolio-item">
+              <span class="caption p-4 p-lg-5">
+                <span
+                  class="caption-content p-2 d-flex flex-column justify-content-center"
+                >
+                  <div class="main-text">
+                    <h2>fresh.vg</h2>
+                    <p>
+                      A React.js based, full stack application for users who
+                      want advice on in season produce and recipes.
+                    </p>
+                  </div>
+                  <div class="alt-text d-none">
+                    <h2>Role</h2>
+                    <p>Back End Lead</p>
+                    <h2>Technology Used</h2>
+                    <p>
+                      React.js, React Router DOM, Webpack 4, Bootstrap 4, PHP,
+                      MySQL, HTML5, CSS3, Apache 2, AWS EC2
+                    </p>
+                  </div>
+                  <p class="mb-0">
+                    <a
+                      href="https://github.com/kittenbites/fresh-cooking-assistant"
+                      target="_blank"
+                    >
+                      <span class="github-link align-bottom m-1"></span>
+                      GitHub</a
+                    >
+                    <a href="https://fresh.vg" target="_blank" class="ml-4">
+                      <span class="live-site-link align-bottom m-1"></span>
+                      Live Site</a
+                    >
+                  </p>
+                </span>
+              </span>
+              <img
+                class="img-fluid"
+                src="img/project-fresh-cooking-assistant.jpg"
+                alt="Fresh Cooking Assistant"
+              />
             </div>
           </div>
-          <div class="col-sm-6 col-lg-4 mb-4">
-            <div class="bg-white mb-4 p-4 h-100 d-flex flex-column">
-              <div>
-                <div class=" text-center icon mb-2"><i class="fab fa-react fa-2x"></i></div>
-                <h4 class="text-uppercase text-center font-weight-bold">Libraries / Frameworks</h4>
-              </div>
-              <ul class="mt-4">
-                <li>Node.js</li>
-                <li>React.js</li>
-                <li>React Router DOM</li>
-                <li>jQuery 3</li>
-                <li>Bootstrap (3, 4)</li>
-                <li>Express.js</li>
-                <li>mysql (module)</li>
-              </ul>
+          <div class="col-lg-6">
+            <div class="portfolio-item">
+              <span class="caption p-4 p-lg-5">
+                <span
+                  class="caption-content p-2 d-flex flex-column justify-content-center"
+                >
+                  <div class="main-text">
+                    <h2>Cellar Door</h2>
+                    <p>
+                      A Bootstrapped, full stack application for users to track
+                      grocery inventory.
+                    </p>
+                  </div>
+                  <div class="alt-text d-none">
+                    <h2>Role</h2>
+                    <p>Sole Developer</p>
+                    <h2>Technology Used</h2>
+                    <p>
+                      React.js, Express.js, MySQL, AWS EC2, Apache2, HTML5,
+                      Bootstrap 4, CSS3, Webpack 4
+                    </p>
+                  </div>
+                  <p class="mb-0">
+                    <a
+                      href="https://github.com/Coding-Christian/cellar-door"
+                      target="_blank"
+                    >
+                      <span class="github-link align-bottom m-1"></span>
+                      GitHub</a
+                    >
+                    <a
+                      href="https://cellar.christian-haney.com"
+                      target="_blank"
+                      class="ml-4"
+                    >
+                      <span class="live-site-link align-bottom m-1"></span>
+                      Live Site</a
+                    >
+                  </p>
+                </span>
+              </span>
+              <img
+                class="img-fluid"
+                src="img/projects-cellar-door.jpg"
+                alt=""
+              />
             </div>
           </div>
-          <div class="col-sm-6 col-lg-4 offset-sm-3 offset-lg-0 mb-4">
-            <div class="bg-white mb-4 p-4 h-100 d-flex flex-column">
-              <div>
-                <div class="text-center icon mb-3"><i class="fas fa-tools fa-2x"></i></div>
-                <h4 class="text-uppercase text-center font-weight-bold">Dev Tools / Concepts</h4>
-              </div>
-              <ul class="mt-4">
-                <li>GitHub</li>
-                <li>Webpack</li>
-                <li>npm</li>
-                <li>APIs</li>
-                <li>UI/UX</li>
-                <li>Slack</li>
-                <li>Figma</li>
-                <li>MeisterTask</li>
-                <li>DB Designer</li>
-                <li>Agile</li>
-              </ul>
+          <div class="col-lg-6">
+            <div class="portfolio-item">
+              <span class="caption p-4 p-lg-5">
+                <span
+                  class="caption-content p-2 d-flex flex-column justify-content-center"
+                >
+                  <div class="main-text">
+                    <h2>JoJo's Bizarre Memory Match</h2>
+                    <p>
+                      An animated card matching game built with
+                      JavaScript/jQuery and themed after the anime series,
+                      <em>"JoJo's Bizarre Adventure"</em>.
+                    </p>
+                  </div>
+                  <div class="alt-text d-none">
+                    <h2>Role</h2>
+                    <p>Sole Developer</p>
+                    <h2>Technology Used</h2>
+                    <p>
+                      JavaScript, jQuery, HTML5, CSS3, AWS EC2
+                    </p>
+                  </div>
+                  <p class="mb-0">
+                    <a
+                      href="https://github.com/Coding-Christian/memory-match-game"
+                      target="_blank"
+                    >
+                      <span class="github-link align-bottom m-1"></span>
+                      GitHub</a
+                    >
+                    <a
+                      href="https://memory.christian-haney.com"
+                      target="_blank"
+                      class="ml-4"
+                    >
+                      <span class="live-site-link align-bottom m-1"></span>
+                      Live Site</a
+                    >
+                  </p>
+                </span>
+              </span>
+              <img
+                class="img-fluid"
+                src="img/project-memory-match.jpg"
+                alt="JoJo's Bizarre Memory Match"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="portfolio-item">
+              <span class="caption p-4 p-lg-5">
+                <span
+                  class="caption-content p-2 d-flex flex-column justify-content-center"
+                >
+                  <h2>Coming Soon</h2>
+                  <p class="mb-0">
+                    Stay tuned...
+                  </p>
+                </span>
+              </span>
+              <img
+                class="img-fluid"
+                src="img/project-multi-playdate.jpg"
+                alt=""
+              />
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="projects">
-      <div class="container">
-        <header class="text-center mb-5">
-          <h2 class="text-uppercase lined">Projects</h2>
-        </header>
-        <div class="row text-center">
-          <div class="col-lg-4 col-md-6 mb-4">
-            <a rel="noopener" href="https://fresh.vg" target="_blank" class="hyperlink"><img src="img/fresh-thumbnail.png" alt="Fresh! Cooking Assistant" class="img-fluid mb-4 border"></a>
-            <h4 class="font-weight-bold text-uppercase">Fresh! Cooking Assistant</h4>
-            <p class="small text-gray text-uppercase">
-              <a rel="noopener" href="https://github.com/kittenbites/fresh-cooking-assistant" target="_blank" class="hyperlink">GitHub</a>
-               |
-              <a rel="noopener" href="https://fresh.vg" target="_blank" class="hyperlink">Live Site</a>
-               |
-              <a id="freshDetailsLink" href="#projectDetails" class="hyperlink link-scroll project-details">More Details</a>
-            </p>
-            <p class="small text-gray">A React/PHP based web application for cooks who want to elevate their cooking with fresh, seasonal ingredients.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <a rel="noopener" href="https://cellar.christian-haney.com" target="_blank" class="hyperlink"><img src="img/cellar-thumbnail.png" alt="Cellar Door" class="img-fluid mb-4 border"></a>
-            <h4 class="font-weight-bold text-uppercase">Cellar Door</h4>
-            <p class="small text-gray text-uppercase">
-              <a rel="noopener" href="https://github.com/Coding-Christian/cellar-door" target="_blank" class="hyperlink">GitHub</a>
-               |
-              <a rel="noopener" href="https://cellar.christian-haney.com" target="_blank" class="hyperlink">Live Site</a>
-               |
-              <a id="cellarDetailsLink" href="#projectDetails" class="hyperlink link-scroll project-details">More Details</a>
-            </p>
-            <p class="small text-gray">A React/Node based web application for shoppers who want to keep track of their groceries</p>
-          </div>
-          <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 mb-4">
-            <a rel="noopener" href="https://memory.christian-haney.com" target="_blank" class="hyperlink"><img src="img/memory-thumbnail.png" alt="Memory Matching Game" class="img-fluid mb-4 border"></a>
-            <h4 class="font-weight-bold text-uppercase">Memory Matching Game</h4>
-            <p class="small text-gray text-uppercase">
-              <a rel="noopener" href="https://github.com/Coding-Christian/memory-match-game" target="_blank" class="hyperlink">GitHub</a>
-               |
-              <a rel="noopener" href="https://memory.christian-haney.com" target="_blank" class="hyperlink">Live Site</a>
-               |
-              <a id="memoryDetailsLink" href="#projectDetails" class="hyperlink link-scroll project-details">More Details</a>
-            </p>
-            <p class="small text-gray">A JavaScript/jQuery based card matching game themed after the anime series, "JoJo's Bizarre Adventure".</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="projectDetails" class="d-none">
-      <div id="freshDetails" class="container">
-        <header class="text-center mb-5">
-          <h2 class="lined text-uppercase">Fresh! Cooking Assistant</h2>
-        </header>
-        <div class="row mb-2">
-          <div class="col-lg-6 d-flex justify-content-center mb-4">
-            <img src="img/fresh-vg.gif" alt="The Fresh! Cooking Assistant app in action" class="img-fluid ">
-          </div>
-          <div class="col-lg-6 d-flex flex-column justify-content-center">
-            <p class="lead">
-              A Full-stack Produce Information Guide<br>
-              <a href="#projects" class="small hyperlink link-scroll project-details">Back to projects</a>
-            </p>
-            <p><b>Role:</b> Lead Back-end Engineer</p>
-            <p><b>Languages Used:</b> Javascript (ES6), PHP, SQL, HTML5, CSS3</p>
-            <p><b>Techonolgies/Libraries Used:</b> React.js, React Router DOM, Bootstrap 4, Webpack, Amazon AWS EC2, Apache2</p>
-            <p><b>Background:</b>
-              Fresh! Cooking Assistant was the first fully realized, full-stack application I worked on.
-              Team Lead, Samantha Nagle, wanted to create an app to help users pick out good produce and provide some other useful information, such as storage tips and recipes.
-              It was decided that the app would be built in React and PHP to build out our knowledge, since we had recently learned these skills.
-              Along with my teammates, I explored new tools and utilities, such as React Router DOM, that I had not been exposed to before.
-              As back-end lead, I was able to create an API with several endpoints to send and retrieve data from our MySQL database.
-              I wrote endpoints to handle the gathering of produce and recipe information, as well as store and manage user data, like saved produce and recipes.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div id="cellarDetails" class="container">
-        <header class="text-center mb-5">
-          <h2 class="lined text-uppercase">Cellar Door</h2>
-        </header>
-        <div class="row mb-2">
-          <div class="col-lg-6 d-flex justify-content-center mb-4">
-            <img src="img/cellar-door.gif" alt="The Fresh! Cooking Assistant app in action" class="img-fluid ">
-          </div>
-          <div class="col-lg-6 d-flex flex-column justify-content-center">
-            <p class="lead">
-              A Full-stack Inventory Management System for Groceries<br>
-              <a href="#projects" class="small hyperlink link-scroll project-details">Back to projects</a>
-            </p>
-            <p><b>Role:</b> Sole Developer</p>
-            <p><b>Languages Used:</b> Javascript (ES6), SQL, HTML5, CSS3</p>
-            <p><b>Techonolgies/Libraries Used:</b> React.js, Node.js, Express.js, MySQL, Bootstrap 4, Webpack, Amazon AWS EC2, Apache2</p>
-            <p><b>Background:</b>
-              Cellar Door served as my introduction into back-end design from the ground up.
-              The app originally started out as the Student Grade Table, a project I built during my time at LearningFuze.
-              The original version of the app was based off of an existing, PHP back-end from a previous project.
-              I wrote a new API in Node with the help of the Express.js and mysql libraries, in order to gather practice with back-end design.
-              One advantage that Express.js offers for handlling HTTP requests is simple routing.
-              HTTP requests can be routed to different parts of the API script based off of request path and method, without the need for explicitly written conditional checks.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div id="memoryDetails" class="container">
-        <header class="text-center mb-5">
-          <h2 class="lined text-uppercase">Jojo's Bizarre Memory Matching Game</h2>
-        </header>
-        <div class="row mb-2">
-          <div class="col-lg-6 d-flex justify-content-center mb-4">
-            <img src="img/memory-match.gif" alt="The Fresh! Cooking Assistant app in action" class="img-fluid ">
-          </div>
-          <div class="col-lg-6 d-flex flex-column justify-content-center">
-            <p class="lead">
-              A Card Matching Game Animated with CSS<br>
-              <a href="#projects" class="small hyperlink link-scroll project-details">Back to projects</a>
-            </p>
-            <p><b>Role:</b> Sole Developer</p>
-            <p><b>Languages Used:</b> Javascript (ES5), HTML5, CSS3</p>
-            <p><b>Techonolgies/Libraries Used:</b> jQuery 3, Amazon AWS EC2, Apache2</p>
-            <p><b>Background:</b>
-              JoJo's Bizarre Matching Game is one of the first applications I designed.
-              The matching game was a project assigned during my time at LearningFuze, that I continued developing after the program.
-              The matching game served as my primary introduction to the front-end topics of UX, animation, and event handling.
-              jQuery provided a relatively painless way to manipulate CSS classes used for animation as well as modify event handlers on elements such as the cards.
-              The transitions built in to CSS made it easy to create simple animations, espcially the dealing and flipping of the cards.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="contact">
-      <div class="container">
-        <header class="text-center mb-5">
-          <h2 class="text-uppercase lined">Contact</h2>
-        </header>
-        <div class="row">
-          <figure class="col-lg-6 d-flex flex-column">
-            <img src="img/learningfuze.jpg" alt="Christian Haney and the Fresh! Cooking Assistant team" class="img-fluid">
-            <figcaption class="small text-gray">
-              The <a rel="noopener" href="https://fresh.vg" class="hyperlink">Fresh!</a> Team. From left to right: Scott Bowler, Project Manager; Christian Parizeau, Front-end Engineer; Samantha Nagle, Team Lead; Me, Back-end Engineer
-            </figcaption>
-          </figure>
-          <div class="col-lg-6 mb-4 d-flex flex-column justify-content-center">
-            <p class="lead">Thanks for visiting!</p>
-            <p class="text-justify mb-2">
-              Thank you for taking the time to read the story of my journey from Chemist to web developer, and for taking a look at my work.
-            </p>
-            <p class="text-justify">
-              Please feel free to contact me with any questions or opportunities you may have regarding me or my work.
-              I will attempt to respond to all communication as quickly as possible, and I thank you for taking time to reach out to me.
-            </p>
-            <p>Phone: <a href="tel:18584723846" class="hyperlink">+1 (858) 472-3846</a></p>
-            <p>Email: <a href="mailto:mail@christian-haney.com" class="hyperlink">mail@christian-haney.com</a></p>
-            <ul class="mb-0 list-inline">
-              <li class="list-inline-item">
-                <a rel="noopener" href="https://www.linkedin.com/in/christian-haney/" target="_blank" title="LinkedIn" class="social-link social-link-linkedin">
-                  <i class="fab fa-linkedin" aria-hidden="true"></i>
-                  <span class="sr-only">LinkedIn profile link</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a rel="noopener" href="https://github.com/Coding-Christian" target="_blank" title="GitHub" class="social-link social-link-github">
-                  <i class="fab fa-github" aria-hidden="true"></i>
-                  <span class="sr-only">GitHub profile link</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a rel="noopener" href="mailto:mail@christian-haney.com" title="Email" class="social-link social-link-email">
-                  <i class="fas fa-envelope" aria-hidden="true"></i>
-                  <span class="sr-only">Email contact link</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="py-4">
+
+    <!-- Call to Action -->
+    <section class="content-section bg-secondary text-white">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 text-center text-lg-left"><p class="mb-0 text-gray">&copy; 2020 Christian Haney</p></div>
-          <div class="col-lg-6 text-center text-lg-right">
-            <p class="mb-0 text-gray">&copy; Template by Bootstrapious — <a href="https://bootstrapious.com/" class="text-gray">Bootstrap Templates</a></p>
+          <div class="col-12 col-md-6 pr-lg-5 mb-5 mb-md-5">
+            <h2>Thanks for visiting!</h2>
+            <p class="text-justify my-4">
+              Thank you for taking the time to read the story of my journey from
+              Chemist to web developer, and for taking a look at my work. Please
+              feel free to contact me with any questions or opportunities you
+              may have regarding me or my work. I will attempt to respond to all
+              communication as quickly as possible, and I thank you for taking
+              time to reach out to me.
+            </p>
+            <p class="resume-cta d-md-inline-block text-center text-md-left">
+              You can check out my resume
+              <strong>HERE</strong>:
+            </p>
+            <div class="container p-0 text-center text-md-left">
+              <a href="#" class="btn btn-xl btn-dark mt-4">Resume</a>
+            </div>
+          </div>
+          <div class="col-6 pl-lg-5">
+            <h2>Contact Me:</h2>
+            <div class="container">
+              <div class="row">
+                <div class="col-6 my-4">
+                  <a href="mailto:christianhaney1996@gmail.com">
+                    <span
+                      class="service-icon rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center"
+                    >
+                      <img
+                        src="img/link-email.png"
+                        alt="Email"
+                        class="skill-icon"
+                      />
+                    </span>
+                  </a>
+                </div>
+                <div class="col-6 my-4">
+                  <a href="tel:18584723846">
+                    <span
+                      class="service-icon rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center"
+                    >
+                      <img
+                        src="img/link-phone.png"
+                        alt="Phone"
+                        class="skill-icon"
+                      />
+                    </span>
+                  </a>
+                </div>
+                <div class="col-6 my-4">
+                  <a href="https://github.com/Coding-Christian" target="_blank">
+                    <span
+                      class="service-icon rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center"
+                    >
+                      <img
+                        src="img/link-github2.png"
+                        alt="GitHub"
+                        class="skill-icon"
+                      />
+                    </span>
+                  </a>
+                </div>
+                <div class="col-6 my-4">
+                  <a
+                    href="https://linkedin.com/in/christian-haney"
+                    target="_blank"
+                  >
+                    <span
+                      class="service-icon rounded-circle mx-auto mb-3 d-flex justify-content-center align-items-center"
+                    >
+                      <img
+                        src="img/link-linkedin.png"
+                        alt="Slack"
+                        class="skill-icon"
+                      /> </span
+                  ></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container mb-5">
+        <div class="logo-decoration d-inline-block"></div>
+        <img src="img/logo_125px.png" alt="Christian Haney" class="mx-5" />
+        <div class="logo-decoration d-inline-block"></div>
+      </div>
+      <p class="text-muted small m-0">
+        Copyright &copy; Christian Haney 2020
+      </p>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js" integrity="sha256-DiHJ7hbvMejsMyP76bpVWacb5HSHQ2sQlrJV8n7KEvA=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16.0.3/dist/smooth-scroll.polyfills.min.js"></script>
-    <script src="js/front.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.min.js"></script>
   </body>
 </html>
